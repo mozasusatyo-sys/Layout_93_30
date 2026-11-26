@@ -1,0 +1,45 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*
+    width: 100%;
+    border: 1px
+    */
+    overflow: hidden;
+    background-color: darkslategray;
+}
+
+li{
+    float: left;
+    /*
+    text-align: center;
+    border-bottom: 1px solid blue
+    */
+}
+
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 8px 16 px;
+    text-decoration: none;
+}
+
+/*
+li:last-child{
+    border-bottom: none;
+}
+
+li a.active{
+    background-color:blue;
+    color:blueviolet
+}
+li a:hover:not(.active){
+    background-color:antiquewhite;
+    color:blueviolet
+}
+*/
+li a:hover {
+    background-color: #111;
+}

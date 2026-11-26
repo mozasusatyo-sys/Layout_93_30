@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: cornsilk;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: cadetblue;
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: lightblue;
+    color: black;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('Coolvetica.otf');
+}
+
+body {
+    font-family: 'Coolvetica', sans-serif;
+}
+
+h2 {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.15); /* Translucent background */
+  backdrop-filter: blur(12px);          /* The blur effect */
+  -webkit-backdrop-filter: blur(12px);  /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 225px; 
+  height: 300px;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; 
+}
+
+/* Hide the top image by default */
+.image-container .top-img {
+  opacity: 0;
+}
+
+/* Reveal the top image when hovering over the container */
+.image-container:hover .top-img {
+  opacity: 1;
+}

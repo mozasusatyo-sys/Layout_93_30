@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: bisque;
+    border: 1px solid black; 
+    position: fixed;
+    height: 100%
+}
+li a{
+    display: inline-block;
+    color:coral;
+    padding: 8px 16 px;
+    text-decoration: none;
+}
+li{
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+li a.active{
+    background-color: cornsilk;
+    color:blueviolet;
+
+}
+li a:hover:not(.active){
+    background-color:blueviolet;
+    color:aquamarine
+}

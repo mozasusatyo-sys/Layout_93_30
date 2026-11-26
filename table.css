@@ -1,0 +1,142 @@
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 60%;
+    border-collapse: collapse;
+}
+tr{
+    background-color: lightskyblue;
+}
+tr:nth-child(even){
+    background-color: lightseagreen;
+}
+tr:hover{
+    background-color: lightslategray;
+}
+.table-merge th {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.table-merge tr th:nth-child(even) {
+    background-color: lightseagreen;
+}
+
+.table-merge th:hover {
+    background-color: beige;
+}
+table.table-merge tr:hover {
+    background-color: transparent;
+}
+
+table.table-merge th {
+    background-color: lightskyblue;
+}
+
+table.table-merge th:hover {
+    background-color: beige;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: cornsilk;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: cadetblue;
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: lightblue;
+    color: black;
+}
+.column{
+    float: left;
+    padding: 10px;
+    text-align: justify;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.footer h2 {
+    color: #4c3d19;
+    background-color: antiquewhite;
+    text-align: center;
+    border: 3px solid #4c3d19;
+    transition: 0.3s ease;
+
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+body{
+    background-image:url(bg\ snoopy.jpg);
+    background-position: center;
+}
+h2 {
+    color: #4c3d19;
+    background-color: antiquewhite;
+    text-align: center;
+    border: 3px solid #4c3d19;
+    transition: 0.3s ease;
+}
+
+h2:hover {
+    color: white;
+    background-color: #192064;
+    border-color: white;
+    transform: scale(1.25);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
